@@ -1,0 +1,36 @@
+#bof{
+    height: 100px;
+}
+
+#dmd{
+   background-color: black;
+}
+
+.form{
+    display: flex;
+    left: 40%;
+}
+
+.form,textarea{
+    height: 15px;
+}
+
+p{color: white;}
+
+#be{
+    display: flex;
+    position: absolute;
+    top: 37%;
+    bottom: 50%;
+    left: 45%;
+}
+
+#cp{
+    border-radius: 10px;
+    height: 30px;
+    background-color: burlywood;
+    display: flex;
+    position: absolute;
+    top: 80%;
+    left: 55%;
+}
