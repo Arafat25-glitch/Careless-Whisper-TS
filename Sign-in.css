@@ -1,0 +1,168 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1b1b1b;
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem; /* Adjusted for better layout */
+    flex-direction: column;
+}
+
+/* Centering Containers */
+#sign-up-main, #student-main, .parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 2rem; /* Space between header and content */
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2rem, 6vw, 3.5rem); /* Responsive font sizing */
+    color: #fff;
+    animation: fadeIn 1.2s ease forwards;
+    text-align: center;
+}
+
+/* Container Styles */
+#sign-up-container, .container, .parent-container {
+    background-color: #2e2e2e;
+    padding: 2.5rem;
+    border-radius: 0.625rem; /* Smooth rounding */
+    box-shadow: 0 0.9375rem 1.875rem rgba(0, 0, 0, 0.4); /* More depth */
+    width: 100%;
+    max-width: 35rem; /* Wider containers */
+    text-align: center;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+    background: linear-gradient(145deg, #333, #1e1e1e);
+    margin: 1rem auto; /* Space between containers */
+}
+
+/* Headings */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.5rem, 5vw, 2.5rem); /* Responsive font sizing */
+    color: #fff;
+    margin-bottom: 1.5rem; /* More space for breathing */
+}
+
+p {
+    color: #a1a1a1;
+    margin-bottom: 2rem; /* Increased margin */
+}
+
+/* Box Container */
+#sign-up-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Increased space between boxes */
+}
+
+.sign-up-box {
+    flex: 1 1 45%;
+    height: clamp(10rem, 25vw, 12rem); /* Adjusted height */
+    background-color: #424242;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0.625rem;
+    transition: all 0.4s ease;
+    position: relative;
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+.sign-up-box:hover {
+    background-color: #555;
+    transform: scale(1.08);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); /* Deep hover effect */
+}
+
+.sign-up-box h3 {
+    font-size: clamp(1.25rem, 4vw, 1.75rem); /* Adjusted for responsiveness */
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 0.875rem 1rem; /* Larger input padding */
+    font-size: 1.1rem;
+    border: none;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: all 0.3s ease;
+    border-radius: 0.625rem;
+    margin-bottom: 1.5rem; /* Increased margin for spacing */
+}
+
+input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgba(0, 255, 255, 0.5); /* Glowing effect */
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #00796b;
+    transform: translateY(-0.25rem); /* Smooth transition */
+    box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.4);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

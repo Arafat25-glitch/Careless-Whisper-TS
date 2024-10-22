@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - DARK ACADEMY</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="sign-in.css">
+</head>
+
+<body>
+    <header id="sign-up-header">
+        <h1>DARK ACADEMY</h1>
+    </header>
+
+    <main id="sign-up-main">
+        <div id="sign-up-container">
+            <h2>Welcome</h2>
+            <p>Please choose your profile</p>
+            <div id="sign-up-box-container">
+                <a href="#student-main" id="sign-up-student-box" class="sign-up-box">
+                    <h3>Student</h3>
+                </a>
+                <a href="#parent" id="sign-up-parent-box" class="sign-up-box">
+                    <h3>Parent</h3>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <header id="student-header">
+        <h1 id="student-title"></h1>
+    </header>
+
+    <main id="student-main">
+        <div class="container" id="student-container">
+            <form class="signup-form" id="student-form">
+                <h2 id="student-heading">Student Sign-up</h2>
+
+                <div class="form-group" id="student-fullname-group">
+                    <label for="fullname" id="student-fullname-label">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group" id="student-email-group">
+                    <label for="email" id="student-email-label">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group" id="student-password-group">
+                    <label for="password" id="student-password-label">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                </div>
+
+                <div class="form-group" id="student-submit-group">
+                    <button type="submit" id="student-submit-button">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <header id="parent">
+        <h1></h1>
+    </header>
+
+    <main>
+        <div class="parent-container">
+            <form class="parent-signup-form">
+                <h2>Parent Sign-up</h2>
+
+                <div class="parent-form-group">
+                    <label for="parent-fullname">Student's Name</label>
+                    <input type="text" id="parent-fullname" name="fullname" placeholder="Enter student's full name" required>
+                </div>
+
+                <div class="parent-form-group">
+                    <label for="parent-phone">Phone number</label>
+                    <input type="text" id="parent-phone" name="Phone number" placeholder="Enter your phone number" required>
+                </div>
+
+                <div class="parent-form-group">
+                    <label for="parent-password">Password</label>
+                    <input type="password" id="parent-password" name="password" placeholder="Create a password" required>
+                </div>
+
+                <div class="parent-form-group">
+                    <label for="parent-relation">Relation to the student</label>
+                    <input type="text" id="parent-relation" name="relation" placeholder="Who are you to the student" required>
+                </div>
+
+                <div class="parent-form-group">
+                    <button type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
